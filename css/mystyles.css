@@ -1,0 +1,294 @@
+/*=========== RESET ==========*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'Roboto', sans-serif; }
+body {background-color: #f5f5f5; max-width: 75%; margin-left: 11%; }
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+
+/*=========== CONTAINER ==========*/
+.container {width: 100%; float: left; padding: 1% 1%; text-align: center; }
+/*=========== BG COLORS ==========*/
+.bg-gradient {background: linear-gradient(to right,#ce2e3c,#da6709);}
+.bg-black {background-color: #130400; }
+.bg-white {background-color: #fff;}
+/*=========== HELPERS ==========*/
+.radius {border-radius: 7px;}
+/* CABEÇALHO */
+.logo {width: 50%; height: 100%; float: left; font-size: 0;}
+.cabecalho {background: #fff;}
+.btn-menu {width: 56px; height: 56px; float: right; text-align: center; color: #fff; border-radius:56px; cursor: pointer;}
+/* MENU */
+.menu {display:none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 10px; left: 0; z-index: 9;}
+.btn-close {font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover {border:1px solid #da6709;}
+/* BANNER */
+.banner {background: url(../img/bg.jpg) no-repeat fixed;}
+.text {width: 90%; float: left; text-align: justify; padding-left: 6%;}
+.text h2 {font-size: 1.5em; color: #da6709; font-weight: bold; padding-top: 3%; padding-bottom: 3%;}
+.text h3 {font-size: 1em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.text h5 {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.text h6 {font-size: 1.3em; color: #000; padding-top: 1%; padding-bottom: 2%; font-weight: bold;}
+.text a {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.text h1 {margin-bottom: 2%;}
+.buttons {width: 100%; margin-top: 2%;}
+.buttons i {float: right;}
+.btn {width: 100%; font-size: 1.5em; text-align: left; cursor: pointer; padding: 5%; }
+.btn-cadastrar { color: #130400;}
+.btn-sobre {color:#fff ; margin-top: 2%;}
+.col-left{ width: 90%; float: left; margin-left: 10%; }
+.col-left ul li{ font-size: 1em; }
+.col-left h2 {font-size: 1.1em; color: #da6709; font-weight: bold; }
+.col-left h3 {font-size: 1em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.col-right { width: 90%; float: right; }
+.col-right h2 {font-size: 1.1em; color: #da6709; font-weight: bold; }
+.col-left h3 {font-size: 1em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.col-right ul li{ font-size: 1em; }
+
+.col-left-project{ width: 90%; float: left; margin-left: 10%; }
+.col-left-project ul li{ font-size: 1em; }
+.col-left-project h2 {font-size: 1.1em; color: #da6709; font-weight: bold; }
+.col-left-project h6 {font-size: 1.3em; color: #000; padding-top: 1%; padding-bottom: 2%; font-weight: bold;}
+.col-right-project { width: 90%; float: right; }
+.col-right-project h2 {font-size: 1.1em; color: #da6709; font-weight: bold; }
+.col-right-project ul li{ font-size: 1em; }
+
+/* SERVIÇOS */
+.servico {width: 100%;  text-align: center;  margin-bottom: 3%;}
+.servico img {border-radius: 7px 7px 0 0;}
+.inner {padding: 7%;}
+.inner a {font-size: 1.3em; color: #130400; font-weight: 700; }
+.inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%; }
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+.space {padding-bottom: 2%;}
+
+/* RODAPÉ */
+.social-icons h3 {font-size: 1.8em; color: rgba(255,255,255,0.7); margin-right: 3%; }
+.social-icons a {font-size: 1em; color: rgba(255,255,255,0.7); margin-right: 3%; }
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.contact h3 {font-size: 1.9em; color: rgba(255,255,255,0.7); margin-right: 3%; margin-top: 5%;}
+.contact a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%; margin-bottom: 5%;}
+.contact a:last-child {margin-right: 0;}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:4%; float: left;}
+
+#slider{
+    list-style:none;
+    width:100%;
+    height: 150px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+}
+#slider li{
+   position: absolute;
+   z-index: 0;
+   display:none;
+}
+
+#slider img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+#slider li.sliderActive{
+    z-index: 0;
+}
+
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+.logo {width: 50%; height: 100%; float: left;}
+.btn {font-size: 2em;}
+
+
+
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+	.logo {width: 10%; height: 100%; float: left;}
+.servico {width: 49%; float: left; margin-right: 2%;}
+.servico:nth-child(2){margin-right: 0;}
+
+
+.slider{
+    list-style:none;
+    width:10%;
+    height: 170px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+}
+.slider li{
+   position: absolute;
+   z-index: 0;
+   display:none;
+}
+
+.slider img {
+  display: block;
+  height: 170px;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+.slider li.sliderActive{
+    z-index: 1;
+}
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+
+.logo {width: 10%; height: 100%; float: left; margin-bottom; 2px; margin-top: 2px;}
+.text {width: 90%; float: left; text-align: justify; padding-left: 6%;}
+.text h2 {font-size: 1.6em; color: #da6709; font-weight: bold; margin-top: 3%;}
+.text h3 {font-size: 1.2em; color: #000; padding-top: 2%; padding-bottom:0%; line-height: 1.5em; font-weight: bold;}
+.text h4 {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%; line-height: 1.5em;}
+.text h5 {font-size: 1.1em; color: #000; padding-top: 0%; padding-bottom: 0%; line-height: 1.7em;}
+.text h6 {font-size: 1.4em; color: #000; padding-top: 1%; padding-bottom: 0%; font-weight: bold;}
+.text a {font-size: 1.1em; color: #000; padding-top: 0%; padding-bottom: 0%; margin-top: 0px;}
+.text p {font-size: 0.8em; color: #000; padding-top: 0%; padding-bottom: 0%; margin-top: 0px;}
+.text img {margin-top: 2px;}
+.text h1 {margin-bottom: 2%;}
+.text table {margin-left: 2%;}
+.buttons {width: 30%; float: right; margin-top: 0; }
+.servico {width: 23%; }
+.servico:nth-child(2){margin-right: 2%;}
+.servico:nth-child(3){margin-right: 2%;}
+.col-left-project{ width: 45%; float: left; margin-left: 60px; }
+.col-left-project h2 {font-size: 1.4em; color: #da6709; font-weight: bold; margin-top: 6%;}
+.col-left-project h6 {font-size: 1em; color: #000; padding-top: 1%; padding-bottom: 2%; font-weight: bold;}
+.col-left-project h4 {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%; line-height: 1.5em;}
+.col-left-project h5 {font-size: 1.1em; color: #000; padding-top: 4%; padding-bottom: 3%; line-height: 1.5em;}
+.col-left-project table {margin-left: 0%;}
+.col-right-project { width: 40%; float: right; margin-right: 20px;}
+.col-right-project h2 {font-size: 1.4em; color: #da6709; font-weight: bold; }
+.col-right-project h4 {font-size: 1.1em; color: #000; padding-top: 1%; padding-bottom: 3%; line-height: 1.5em;}
+.col-right-project h1 {margin-bottom: 2%;}
+.col-right-project img { width: 70%; margin-bottom: 3%;}
+.col-right-project iframe { margin-top: 2%;}
+.space {padding-bottom: 2%;}
+.social-icons {width: 55%; float: left;}
+.social-icons h3 {font-size: 1.8em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a {font-size: 1.1em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.contact {width: 45%; float: right; }
+.contact h3 {font-size: 1.9em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.contact a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.contact a:last-child {margin-right: 0;}
+.contact a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:4%; float: left; margin-left: 35%; }
+
+#slider{
+    list-style:none;
+    width:100%;
+    height: 270px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+}
+#slider li{
+   position: absolute;
+   z-index: 0;
+   display:none;
+}
+
+#slider img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+#slider li.sliderActive{
+    z-index: 1;
+}
+}
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px) {
+	.logo {width: 10%; height: 100%; float: left; margin-bottom; 2px; margin-top: 2px;}
+.btn-menu {display: none;}
+.btn-close {display: none;}
+.menu {width: auto; height: 56px; line-height: 56px; float: left; margin-left: 23%; background-color: #fff; padding-top: 30px;
+display: block !important; position: static;}
+.menu li {padding: 0; float: left;}
+.menu li a {color:#130400; font-size: 1.2em; padding: 15px; }
+.menu li a:hover {border: none; color:#da6709; }
+/*.col-left{ width: 40%; float: left; margin-left: 150px; }
+.col-left h3 {font-size: 0.8em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.col-left ul li{ font-size: 1.5em; }
+.col-right { width: 40%; float: right; }
+.col-right h3 {font-size: 0.8em; color: #000; padding-top: 2%; padding-bottom: 3%;}
+.col-right ul li{ font-size: 1.5em; }*/
+
+.col-left{ width: 40%; float: left; margin-left: 150px; }
+
+.col-left h2 {font-size: 1.4em; color: #da6709; font-weight: bold; }
+.col-left h3 {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%; line-height: 1.5em;}
+.col-left h4 {font-size: 0.9em; color: #000; padding-top: 1%; padding-bottom: 3%; line-height: 1.5em;}
+.col-left h5 {font-size: 1.1em; color: #000; padding-top: %; padding-bottom: 0%; line-height: 1.7em;}
+.col-right { width: 40%; float: right; }
+.col-right h2 {font-size: 1.4em; color: #da6709; font-weight: bold; margin-top: 7%;}
+.col-right h3 {font-size: 1.1em; color: #000; padding-top: 2%; padding-bottom: 3%; line-height: 1.5em;}
+.col-right h4 {font-size: 0.9em; color: #000; padding-top: 2%; padding-bottom: 3%; line-height: 1.5em;}
+.col-right h5 {font-size: 1.1em; color: #000; padding-top: 4%; padding-bottom: 0%; line-height: 1.7em;}
+
+.col-right h1 {margin-bottom: 2%;}
+.col-right img { width: 70%; margin-bottom: 3%;}
+
+.space {padding-bottom: 2%;}
+.social-icons {width: 55%; float: left; margin-top:2%; }
+.social-icons h3 {font-size: 1.9em; color: rgba(255,255,255,0.7); margin-right: 3%; margin-bottom: 2%;}
+.social-icons a {font-size: 1.1em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.contact {width: 45%; float: right; }
+.contact h3 {font-size: 1.9em; color: rgba(255,255,255,0.7); margin-right: 3%; margin-bottom: 4%;  margin-top: 7%;}
+.contact a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.contact a:last-child {margin-right: 0;}
+.contact a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:4%; float: left; margin-left: 35%; }
+
+#slider{
+    list-style:none;
+    width:100%;
+    height: 230px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+}
+#slider li{
+   position: absolute;
+   z-index: 0;
+   display:none;
+}
+
+#slider img {
+  display: block;
+  height: 230px;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+#slider li.sliderActive{
+    z-index: 1;
+}
+}
+
+
